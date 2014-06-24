@@ -1,0 +1,26 @@
+[Desktop Entry]
+Encoding=UTF-8
+<<<<<<< HEAD
+Name=sandy
+Comment=sandy P2P Cryptocurrency
+Comment[fr]=sandy, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=sandy, eşten eşe kriptografik sanal para birimi
+Comment[es]=sandy, una criptomoneda P2P
+Exec=/usr/bin/sandy-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/sandy;
+=======
+Name=bitcoinplus
+Comment=bitcoinplus P2P Cryptocurrency
+Comment[fr]=bitcoinplus, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=bitcoinplus, eşten eşe kriptografik sanal para birimi
+Comment[es]=bitcoinplus, una criptomoneda P2P
+Exec=/usr/bin/bitcoinplus-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/bitcoinplus;
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+Categories=Office;

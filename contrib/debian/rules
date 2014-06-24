@@ -1,0 +1,60 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+
+#DEB_MAKE_CHECK_TARGET = test_bitcoin
+#build/bitcoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bitcoin)
+
+<<<<<<< HEAD
+DEB_INSTALL_EXAMPLES_sandyd += debian/examples/*
+DEB_INSTALL_MANPAGES_sandyd += debian/manpages/*
+=======
+DEB_INSTALL_EXAMPLES_bitcoinplusd += debian/examples/*
+DEB_INSTALL_MANPAGES_bitcoinplusd += debian/manpages/*
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+
+%:
+	dh --with bash-completion $@
+
+override_dh_auto_build:
+<<<<<<< HEAD
+	cd src; $(MAKE) -f makefile.unix sandyd
+	$(MAKE)
+
+override_dh_auto_clean:
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f sandy-qt; fi
+	cd src; $(MAKE) -f makefile.unix clean
+
+override_dh_auto_configure:
+	qmake sandy-qt.pro USE_QRCODE=1
+
+override_dh_auto_test:
+	cd src; $(MAKE) -f makefile.unix test_sandy
+	src/test_sandy
+
+# Ensure wrapper is set executable
+binary-post-install/sandyd:
+	chmod +x $(cdbs_curdestdir)usr/bin/sandyd
+binary-post-install/sandy-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/sandy-qt
+=======
+	cd src; $(MAKE) -f makefile.unix bitcoinplusd
+	$(MAKE)
+
+override_dh_auto_clean:
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f bitcoinplus-qt; fi
+	cd src; $(MAKE) -f makefile.unix clean
+
+override_dh_auto_configure:
+	qmake bitcoinplus-qt.pro USE_QRCODE=1
+
+override_dh_auto_test:
+	cd src; $(MAKE) -f makefile.unix test_bitcoinplus
+	src/test_bitcoinplus
+
+# Ensure wrapper is set executable
+binary-post-install/bitcoinplusd:
+	chmod +x $(cdbs_curdestdir)usr/bin/bitcoinplusd
+binary-post-install/bitcoinplus-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/bitcoinplus-qt
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

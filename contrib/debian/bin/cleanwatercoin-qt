@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+umask 077
+
+<<<<<<< HEAD
+basedir=~/.sandy
+dbfile="$basedir/DB_CONFIG"
+cfgfile="$basedir/sandy.conf"
+
+[ -e "$basedir" ] || mkdir "$basedir"
+
+# sandy does not clean up DB log files by default
+[ -e "$dbfile" ] || echo 'set_flags DB_LOG_AUTOREMOVE' > "$dbfile"
+
+exec /usr/lib/sandy/sandy-qt "$@"
+=======
+basedir=~/.bitcoinplus
+dbfile="$basedir/DB_CONFIG"
+cfgfile="$basedir/bitcoinplus.conf"
+
+[ -e "$basedir" ] || mkdir "$basedir"
+
+# bitcoinplus does not clean up DB log files by default
+[ -e "$dbfile" ] || echo 'set_flags DB_LOG_AUTOREMOVE' > "$dbfile"
+
+exec /usr/lib/bitcoinplus/bitcoinplus-qt "$@"
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

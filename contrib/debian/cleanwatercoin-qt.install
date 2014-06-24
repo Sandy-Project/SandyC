@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+sandy-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/sandy-qt.desktop usr/share/applications
+debian/sandy-qt.protocol usr/share/kde4/services/
+=======
+bitcoinplus-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/bitcoinplus-qt.desktop usr/share/applications
+debian/bitcoinplus-qt.protocol usr/share/kde4/services/
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

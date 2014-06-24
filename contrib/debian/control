@@ -1,0 +1,89 @@
+<<<<<<< HEAD
+Source: sandy
+=======
+Source: bitcoinplus
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+Section: utils
+Priority: optional
+Maintainer: Irving A. Bermúdez S. <bigchirv@gmail.com>
+Build-Depends: debhelper,
+ devscripts,
+ bash-completion,
+ libboost-system-dev (>> 1.35) | libboost-system1.35-dev,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libminiupnpc8-dev,
+ libboost-filesystem-dev (>> 1.35) | libboost-filesystem1.35-dev,
+ libboost-program-options-dev (>> 1.35) | libboost-program-options1.35-dev,
+ libboost-thread-dev (>> 1.35) | libboost-thread1.35-dev,
+ libboost-test-dev (>> 1.35) | libboost-test1.35-dev,
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev
+Standards-Version: 3.9.2
+<<<<<<< HEAD
+Homepage: http://sandy.cc/
+Vcs-Git: git://github.com/sandyproject/sandy.git
+Vcs-Browser: http://github.com/sandyproject/sandy
+
+Package: sandyd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ sandy is a free open source peer-to-peer electronic cash system that
+=======
+Homepage: http://bitcoinplus.cc/
+Vcs-Git: git://github.com/bitcoinplusproject/bitcoinplus.git
+Vcs-Browser: http://github.com/bitcoinplusproject/bitcoinplus
+
+Package: bitcoinplusd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ bitcoinplus is a free open source peer-to-peer electronic cash system that
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+ is completely decentralized, without the need for a central server or
+ trusted parties.  Users hold the crypto keys to their own money and
+ transact directly with each other, with the help of a P2P network to
+ check for double-spending.
+ .
+ By default connects to an IRC network to discover other peers.
+ .
+ Full transaction history is stored locally at each client.  This
+ requires 2+ GB of space, slowly growing.
+ .
+<<<<<<< HEAD
+ This package provides sandyd, a combined daemon and CLI tool to
+ interact with the daemon.
+
+Package: sandy-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ sandy is a free open source peer-to-peer electronic cash system that
+=======
+ This package provides bitcoinplusd, a combined daemon and CLI tool to
+ interact with the daemon.
+
+Package: bitcoinplus-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ bitcoinplus is a free open source peer-to-peer electronic cash system that
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+ is completely decentralized, without the need for a central server or
+ trusted parties.  Users hold the crypto keys to their own money and
+ transact directly with each other, with the help of a P2P network to
+ check for double-spending.
+ .
+ By default connects to an IRC network to discover other peers.
+ .
+ Full transaction history is stored locally at each client.  This
+ requires 2+ GB of space, slowly growing.
+ .
+<<<<<<< HEAD
+ This package provides sandy-Qt, a GUI for sandy based on Qt.
+=======
+ This package provides bitcoinplus-Qt, a GUI for bitcoinplus based on Qt.
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

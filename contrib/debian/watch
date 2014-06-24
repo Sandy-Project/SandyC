@@ -1,0 +1,8 @@
+# Run the "uscan" command to check for upstream updates and more.
+version=4
+opts=uversionmangle=s/(\d)(alpha|beta|rc)/$1~$2/,dversionmangle=s/~dfsg\d*// \
+<<<<<<< HEAD
+ http://githubredir.debian.net/github/sandyproject/sandy v(.*).tar.gz
+=======
+ http://githubredir.debian.net/github/bitcoinplusproject/bitcoinplus v(.*).tar.gz
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

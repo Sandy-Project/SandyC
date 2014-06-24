@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+sandy (1.4.0-1) unstable; urgency=low
+=======
+bitcoinplus (1.4.0-1) unstable; urgency=low
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+
+  [ Balthazar ]
+  * Initial release.
+
+ -- Irving A. Bermúdez S. <bigchirv@gmail.com>  Mon, 25 Feb 2014 00:32:01 -0430

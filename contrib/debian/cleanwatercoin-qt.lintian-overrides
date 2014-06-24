@@ -1,0 +1,6 @@
+# Linked code is Expat - only Debian packaging is GPL-2+
+<<<<<<< HEAD
+sandy-qt: possible-gpl-code-linked-with-openssl
+=======
+bitcoinplus-qt: possible-gpl-code-linked-with-openssl
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

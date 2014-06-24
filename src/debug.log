@@ -1,0 +1,10 @@
+Flush(false) db not started
+StopNode()
+Flushed 0 addresses to peers.dat  208ms
+Flush(true) db not started
+<<<<<<< HEAD
+sandy exited
+=======
+bitcoinplus exited
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+

@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+Building sandy
+
+See doc/readme-qt.rst for instructions on building sandy QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of sandy.
+
+See doc/build-*.txt for instructions on building sandyd,
+the intended-for-services, no-graphical-interface, reference
+implementation of sandy.
+=======
+Building bitcoinplus
+
+See doc/readme-qt.rst for instructions on building bitcoinplus QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of bitcoinplus.
+
+See doc/build-*.txt for instructions on building bitcoinplusd,
+the intended-for-services, no-graphical-interface, reference
+implementation of bitcoinplus.
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1

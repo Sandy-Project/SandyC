@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+umask 077
+
+<<<<<<< HEAD
+basedir=~/.sandy
+cfgfile="$basedir/sandy.conf"
+=======
+basedir=~/.bitcoinplus
+cfgfile="$basedir/bitcoinplus.conf"
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
+
+[ -e "$basedir" ] || mkdir "$basedir"
+
+[ -e "$cfgfile" ] || perl -le 'print"rpcpassword=",map{(a..z,A..Z,0..9)[rand 62]}0..9' > "$cfgfile"
+
+<<<<<<< HEAD
+exec /usr/lib/sandy/sandyd "$@"
+=======
+exec /usr/lib/bitcoinplus/bitcoinplusd "$@"
+>>>>>>> a0ba532b287afc65ec21c71ff1be1447810aaba1
